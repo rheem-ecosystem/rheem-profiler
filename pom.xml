@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>io.rheem</groupId>
-    <artifactId>rheem-profiler</artifactId>
+    <artifactId>rheem-profiler_${scala.mayor.version}</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
