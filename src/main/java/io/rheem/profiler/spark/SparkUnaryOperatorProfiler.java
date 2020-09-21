@@ -29,7 +29,7 @@ public class SparkUnaryOperatorProfiler extends SparkOperatorProfiler {
     }
 
     @Override
-    protected Result executeOperator() {
+    protected SparkOperatorProfiler.Result executeOperator() {
         final RddChannel.Instance inputChannelInstance = createChannelInstance(this.inputRdd, this.sparkExecutor);
         final RddChannel.Instance outputChannelInstance = createChannelInstance(this.sparkExecutor);
 

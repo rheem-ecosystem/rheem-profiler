@@ -20,7 +20,7 @@ public abstract class SparkSourceProfiler extends SparkOperatorProfiler {
     }
 
     @Override
-    protected Result executeOperator() {
+    protected SparkOperatorProfiler.Result executeOperator() {
         final RddChannel.Instance outputChannelInstance = createChannelInstance(this.sparkExecutor);
 
         // Let the operator execute.

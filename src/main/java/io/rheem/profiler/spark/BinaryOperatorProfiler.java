@@ -38,7 +38,7 @@ public class BinaryOperatorProfiler extends SparkOperatorProfiler {
     }
 
     @Override
-    protected Result executeOperator() {
+    protected SparkOperatorProfiler.Result executeOperator() {
         final RddChannel.Instance inputChannelInstance0 = createChannelInstance(this.inputRdd0, this.sparkExecutor);
         final RddChannel.Instance inputChannelInstance1 = createChannelInstance(this.inputRdd1, this.sparkExecutor);
         final RddChannel.Instance outputChannelInstance = createChannelInstance(this.sparkExecutor);

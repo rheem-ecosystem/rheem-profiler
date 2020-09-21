@@ -28,7 +28,7 @@ public class SinkProfiler extends SparkOperatorProfiler {
     }
 
     @Override
-    protected Result executeOperator() {
+    protected SparkOperatorProfiler.Result executeOperator() {
         final ChannelInstance inputChannelInstance = createChannelInstance(this.inputRdd, this.sparkExecutor);
 
         // Let the operator execute.
